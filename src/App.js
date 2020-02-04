@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+// import NoteCard from "./NoteCard";
 import './App.css';
+import "bulma/css/bulma.css";
 
-function App() {
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <h1 className="title">Spit Bawlin</h1>
+      {/* <textarea className="memo" placeholder="What's on your mind?"></textarea> */}
+      <br></br>
+      {/* <button className="button">CREATE A MEMO</button> */}
+      {/* <NoteCard /> */}
+      </div>
+      
+      
+    
+      
+    
   );
 }
 
-export default App;
+
