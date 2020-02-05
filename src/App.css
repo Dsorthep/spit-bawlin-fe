@@ -1,27 +1,52 @@
-@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Damion|Economica&display=swap');
 
 .App {
   text-align: center;
   background-image: url("../src/bulletin-pic.jpeg");
   background-size: cover;
   font-family: 'Anton', sans-serif;
+  padding-bottom: 100px;
+}
+
+.brand {
+  font-family: 'Damion', cursive;
+  font-size: 150px;
+  color: black;
 }
 
 .title {
-  font-size: 100px;
+  font-size: 50px;
   text-align: center;
 }
 
 .button {
-  background-color: aqua;
   border-radius: 4px;
-  width: 50px;
-  height: 20px;
+  width: 200px;
+  height: 45px;
+  margin-bottom: 150px;
 }
 
 .memo {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 200px;
+  margin-bottom: 50px;
+}
+
+.resources-menu {
+  font-size: 24px;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.box {
+  background-color: yellow;
+  font-family: 'Economica', sans-serif;
+}
+.coffeehouse {
+  height: 400px;
+  width: 400px;
 }
 
 
