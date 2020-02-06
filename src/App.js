@@ -1,4 +1,5 @@
 import React from 'react';
+import NoteForm from "./components/NoteForm";
 import NoteCard from "./components/NoteCard";
 import Coffee from "./components/Coffee";
 import './App.css';
@@ -10,9 +11,8 @@ export default function App() {
   return (
     <div className="App">
       <h1 className="brand">Spit Bawlin</h1>
-      <textarea className="memo" placeholder="What's on your mind?"></textarea>
       <br></br>
-      <button className="button">CREATE A MEMO</button>
+      <NoteForm />
       <br></br>
       <NoteCard />
       <div class="tabs is-toggle is-fullwidth is-large">
