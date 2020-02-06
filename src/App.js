@@ -1,5 +1,6 @@
 import React from 'react';
-import NoteCard from "./NoteCard";
+import NoteCard from "./components/NoteCard";
+import Coffee from "./components/Coffee";
 import './App.css';
 import "bulma/css/bulma.css";
 // import * as Coffeehouse from "./coffeehouses.jpg";
@@ -36,7 +37,8 @@ export default function App() {
     </li>
   </ul>
 </div>
-
+<br></br>
+<Coffee />
 
       </div>
       
