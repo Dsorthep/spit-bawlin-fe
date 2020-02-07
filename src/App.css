@@ -32,6 +32,7 @@
   border-radius: 10px;
 }
 
+
 .field-create-note {
  
   /* margin-bottom: 15px; */
@@ -87,6 +88,7 @@
   background: #111;
   text-align: center;
   margin-left: 10%;
+  border-radius: 10px;
 }
 
 .form-coffee {
@@ -105,6 +107,7 @@
 .modal-main {
   position: fixed;
   background: white;
+  border-radius: 10px;
   width: 50%;
   height: auto;
   top: 50%;

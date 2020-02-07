@@ -2,12 +2,13 @@ import React from "react";
 import "bulma/css/bulma.css";
 
 export default function NoteForm() {
+
     
     return (
         <>
-        <div className="note-form">
+         <div className="note-form">
             <br></br>
-            <h1>Create a new note!</h1>
+            {/* <h1>Create a new note!</h1> */}
             <br></br>
             <br></br>
         <div className="field-create-note">
@@ -33,7 +34,7 @@ export default function NoteForm() {
     <button class="button is-dark">SUBMIT</button>
   </div>
 </div>
-</div>
+</div> 
 </>
     )
 }
