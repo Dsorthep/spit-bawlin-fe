@@ -66,13 +66,14 @@
   font-family: 'Economica', sans-serif;
 }
 .coffee-map {
-  height: 200px;
-  width: 200px;
+  height: 450px;
+  width: 450px;
   font-family: Nixie One;
   font-size: 40px;                    /* Coffee.js */
   background: #111;
   text-align: center;
   margin-left: 20px;
+  padding: 15px;
 }
 
 
