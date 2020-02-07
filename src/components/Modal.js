@@ -9,7 +9,7 @@ export default function Modal({handleClose, show, children}) {
             <div className={showHideClassName}>
                 <section className="modal-main">
                     {children}
-                    <button onClick={handleClose}>close</button>
+                    <button className="modal-close-btn" onClick={handleClose}>close</button>
                 </section>
             </div>
         );

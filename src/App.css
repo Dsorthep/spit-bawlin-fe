@@ -32,6 +32,9 @@
   border-radius: 10px;
 }
 
+.note-form-title {
+  font-size: 24px;
+}
 
 .field-create-note {
  
@@ -41,11 +44,14 @@
 
 }
 
-.button {
+.note-submit-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 24px;
   border-radius: 4px;
-  width: 200px;
+  width: 150px;
   height: 45px;
   margin-bottom: 150px;
+  align-content: center;
 }
 
 .memo {
@@ -107,12 +113,22 @@
 .modal-main {
   position: fixed;
   background: white;
-  border-radius: 10px;
+  border-radius: 5px;
   width: 50%;
   height: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.modal-close-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 12px;
+  width: 50px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
 }
 
 .display-block {

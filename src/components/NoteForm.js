@@ -1,40 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import "bulma/css/bulma.css";
 
 export default function NoteForm() {
+    
+        const [noteTitle, setNoteTitle] = useState("");
+        const [noteDate, setNoteDate] = useState("");
+        const [noteText, setNoteText] = useState("");
+
+        return (
+            <>
+             <div className="note-form">
+                <br></br>
+                <h1 className="note-form-title">Create a new note!</h1>
+                <br></br>
+                <br></br>
+            <div className="field-create-note">
+      {/* <label className="label">Name</label> */}
+      <div className="control">
+    <input 
+    className="input note-title" 
+    type="text" 
+    value={noteTitle} 
+    onChange={({ target }) => setNoteTitle(target.value)} 
+    placeholder="TITLE OF YOUR NOTE"></input> 
+      </div>
+    </div>
+    <div className="field-create-note">
+      {/* <label className="label">Name</label> */}
+      <div className="control">
+    <input 
+    className="input note-date" 
+    type="text" 
+    value={noteDate} 
+    onChange={({ target }) => setNoteDate(target.value)} 
+    placeholder="DATE AND TIME OF EVENT"></input>
+      </div>
+    </div>
+    <div className="field-create-note">
+      {/* <label className="label"></label> */}
+      <div className="control">
+    <textarea 
+    className="textarea note-text" 
+    value={noteText} 
+    onChange={({ target }) => setNoteText(target.value)} 
+    placeholder="WRITE YOUR NOTE..."></textarea>
+      </div>
+    </div>
+    <div className="field-create-note">
+      <div className="control">
+        <button 
+        className="button note-submit-btn is-black" 
+        onClick={event => {
+            event.preventDefault();
+        }}>SUBMIT</button>
+      </div>
+    </div>
+    </div> 
+    </>
+        )
+    
 
     
-    return (
-        <>
-         <div className="note-form">
-            <br></br>
-            {/* <h1>Create a new note!</h1> */}
-            <br></br>
-            <br></br>
-        <div className="field-create-note">
-  {/* <label className="label">Name</label> */}
-  <div className="control">
-    <input className="input" type="text" placeholder="TITLE OF YOUR NOTE" />
-  </div>
-</div>
-<div className="field-create-note">
-  {/* <label className="label">Name</label> */}
-  <div className="control">
-    <input className="input" type="text" placeholder="DATE AND TIME OF EVENT" />
-  </div>
-</div>
-<div className="field-create-note">
-  {/* <label className="label"></label> */}
-  <div className="control">
-    <textarea className="textarea" placeholder="WRITE YOUR NOTE..."></textarea>
-  </div>
-</div>
-<div className="field-create-note">
-  <div className="control">
-    <button class="button is-dark">SUBMIT</button>
-  </div>
-</div>
-</div> 
-</>
-    )
+    
 }
