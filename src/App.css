@@ -46,27 +46,46 @@
 
 .note-submit-btn {
   font-family: 'Anton', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   border-radius: 4px;
   width: 150px;
   height: 45px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   align-content: center;
 }
 
-.memo {
-  width: 500px;                 
-  height: 200px;
-  margin-bottom: 50px;
+.resource-form {
+  font-family: 'Anton', sans-serif;
+  color: black;
+  margin-left: 10%;
+  margin-bottom: 10px;
+  width: 500px;
+  background-color: white;
+  border-radius: 10px;
 }
 
-.resources-menu {
+.resource-form-title {
   font-size: 24px;
-  color: black;
-  background-color: white;        /* Resources */
-  border-radius: 5px;
-  margin: 10px;
 }
+
+.field-create-resource {
+ 
+  /* margin-bottom: 15px; */
+  padding: 20px 20px 20px 20px;
+  
+
+}
+
+.resource-submit-btn {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  border-radius: 4px;
+  width: 150px;
+  height: 45px;
+  margin-bottom: 50px;
+  align-content: center;
+}
+
 
 .box {
   background-color: yellow;                 /* NoteCard.js */
@@ -113,6 +132,8 @@
 .modal-main {
   position: fixed;
   background: white;
+  color: black;
+  font-family: 'Economica', sans-serif;
   border-radius: 5px;
   width: 50%;
   height: auto;
