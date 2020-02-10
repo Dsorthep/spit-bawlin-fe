@@ -3,20 +3,20 @@ import "bulma/css/bulma.css";
 import NoteForm from "./components/NoteForm";
 // import PostIt from "./post-it.jpg";
 
-export default function  NoteCard({noteTitle, noteDate, noteText}) {
-    return (
-      <NoteForm>
+export default function NoteCard({ noteTitle, noteDate, noteText }) {
+  return (
+    <NoteForm>
       {/* <div className="tile is-ancestor"> */}
-  <div className="tile is-parent">
-    <article className="tile is-child box">
-      <p className="title">{noteTitle}</p>
-      <p className="subtitle">{noteDate}</p>
-      <br></br>
-    <p>{noteText}</p>
-    </article>
-  </div>
-  </NoteForm>
-  /* <div className="tile is-parent">
+      <div className="tile is-parent">
+        <article className="tile is-child box">
+          <p className="title">{noteTitle}</p>
+          <p className="subtitle">{noteDate}</p>
+          <br></br>
+          <p>{noteText}</p>
+        </article>
+      </div>
+    </NoteForm>
+    /* <div className="tile is-parent">
     <article className="tile is-child box">
       <p className="title">Job Interview</p>
       <p className="subtitle">@Target: Wednesday, Feb 5</p>
@@ -37,6 +37,6 @@ export default function  NoteCard({noteTitle, noteDate, noteText}) {
       <p className="subtitle">@General Mills: Wednesday, Feb 12</p>
     </article>
   </div> */
-// </div>
-    )
-  }
+    // </div>
+  );
+}
