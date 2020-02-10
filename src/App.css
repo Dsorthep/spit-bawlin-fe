@@ -55,6 +55,13 @@
   align-content: center;
 }
 
+.tile {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 300px;
+  height: 300px auto;
+}
+
 .resource-form {
   font-family: 'Anton', sans-serif;
   color: black;
