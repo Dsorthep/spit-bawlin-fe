@@ -1,3 +1,4 @@
 export const initialState = {
-    notes: []
+    notes: [],
+    resources: []
   };
