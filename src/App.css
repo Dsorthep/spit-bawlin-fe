@@ -18,7 +18,8 @@
 }
 
 .title {
-  font-size: 50px;        /* NoteCard.js */
+  font-size: 50px;   
+  color: black;     /* NoteCard.js */
   text-align: center;
 }
 
@@ -86,6 +87,12 @@
   align-content: center;
 }
 
+.resource-icon-title{
+    font-size: 30px;   
+    color: black;     /* NoteCard.js */
+    text-align: center;
+  
+}
 
 .box {
   background-color: yellow;                 /* NoteCard.js */

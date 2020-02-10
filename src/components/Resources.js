@@ -3,9 +3,10 @@ import { useStateValue } from "../utils/StateContext";
 import { CONSTANTS } from "../utils/CONSTANTS";
 import "bulma/css/bulma.css";
 import Modal from "./Modal";
-import htmlIcon from "../assets/html-icon.png";
-import cssIcon from "../assets/css-icon.png";
-import jsIcon from "../assets/js-icon.png";
+// import htmlIcon from "../assets/html-icon.png";
+// import cssIcon from "../assets/css-icon.png";
+// import jsIcon from "../assets/js-icon.png";
+import link from "../assets/link.png";
 
 
 
@@ -23,8 +24,7 @@ export default function Resources() {
     const [globalState, dispatch] = useStateValue();
   const [state, setState] = useState({
     title: "",
-    date: "",
-    text: ""
+    url: ""
   });
 
   useEffect(() => {
@@ -84,7 +84,12 @@ export default function Resources() {
           </div>
         </div>
       </div>
-            <div className="columns">
+            
+            <div className="resource-icon">
+            <h1 className="resource-icon-title">YOUR RESOURCES</h1>
+            <img src={link} onClick={showModal} alt="HTML" />
+            </div>
+            {/* <div className="columns">
             <div className="column resource-icon">
             <img src={htmlIcon} onClick={showModal} alt="HTML" />
             </div>
@@ -94,14 +99,18 @@ export default function Resources() {
             <div className="column resource-icon">
             <img src={jsIcon} onClick={showModal} alt="HTML" />
             </div>
-            <div>
+            <div> */}
                 <Modal show={show} handleClose={hideModal}>
                 </Modal>
-            </div>
-            </div>
+                
+            {/* </div>
+            </div> */}
             </>
         )
     }
+
+    // Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+
 
 //     const Modal = ({ children, closeModal, modalState, title }) => {
 //         if(!modalState) {
